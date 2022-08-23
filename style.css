@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    font-size:2rem
+}
+.container{
+    width:80%;
+    margin:auto;
+
+}
+.btn{
+   
+    background: red;
+    padding: 10px 14px;
+    border-radius: 30px 30px 30px 30px;
+    width:30%;
+    
+   
+
+
+}
+.try{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-card{
+    background: rgba(4, 245, 213, 0.658);
+    border-radius: 30px 30px 30px 30px;
+    width: 100%;
+    height: 75px;
+}
+.gbl-msg{
+    background: rgba(0, 255, 221, 0.377);
+    color: rgb(17, 14, 8);
+    line-height: 52px;
+}
+.gbl-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar{
+    background-color: aquamarine;
+    color: rgb(129, 39, 39);
+    font-size: 24px;
+}
+.top-menu{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.menu > ul{
+    display:flex;
+    list-style: none;
+}
+.menu ul li{
+    margin-left: 20px;
+}
+.hero {
+    background: url(image/hero.webp) no-repeat center center;
+    height: 80vh;
+    background-size:cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.hero-content {
+    background: rgba(0, 255, 221, 0.377);
+    width: 450px;
+    padding: 10 24px;
+    color: white;
+    text-align:center;
+    border-radius: 100px;
+
+}
+.main{
+    display: flex;
+    margin-top:32 px;
+}
+.main-content{
+    margin-right: 1rem;
+    width:66%;
+    
+}
+.side-links{
+   
+    width: 44%;
+
+}
+/*Article section*/
+article{
+    display:flex;
+    border: 1px solid rgba(243, 140, 5, 0.377);
+    margin-top: 1rem;
+    padding:1rem;
+
+}
+.art-img{
+    width: 1000px;
+    margin-right:20px;
+}
+.art-content{
+    font-size:1.5rem;
+}
+/* Aside section */
+
+.read-by-country, 
+.read-by-date{
+    margin-top:3.5rem;
+    background:rgb(70, 39, 129);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.read-by-date{
+    background: rgba(243, 140, 5, 0.377);
+}
+/*recomendation*/
+.recc{
+    background: rgba(4, 245, 213, 0.658);
+    margin-top:20px;
+    padding:20px;
+}
+.card-list{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.class{
+    /*width: 300px;*/
+    margin: 10px 10px;
+    background: rgba(31, 129, 116, 0.658);
+    border-radius: 5px;
+    padding-bottom: 1.5rem;
+    box-shadow: -5px 5px 5px 5px rgb(104, 94, 94);
+}
+.class img{
+    border-radius: 20px 20px 20px 20px;
+}
+.subs{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    background:rgb(17, 14, 8);
+    color:wheat;
+    padding: 30px;
+    text-align: center;
+    margin-top:30px;
+}
+
+/*media query*/
+@media (max-width:990){
+    .card-list{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+    .main{
+        display: flex;
+       flex-direction: column;
+    
+    }
+    .main-content{
+        margin-right: 1rem;
+        width:100%;
+        
+    }
+    article{
+        display:flex;
+        border: 1px solid rgba(243, 140, 5, 0.377);
+        flex-direction: column;
+    }
+    .art-img{
+        width: 100px;
+        margin-right:0;
+        margin-bottom: 1rem;
+    }
+    .side-links{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .side-links >div{
+        width: 40%;
+    }
+    .card-list,
+    .card-list >div{
+        display: flex;
+        flex-direction: column;
+    }
+}
